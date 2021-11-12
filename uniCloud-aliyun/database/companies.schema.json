@@ -1,0 +1,66 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"title": "驾校名称",
+			"description": "驾校名称，不允许重复",
+			"trim": "both"
+		},
+		"coach": {
+			"bsonType": "array",
+			"title": "教练",
+			"description": "驾校的教练",
+			"foreignKey": "coachs.name"
+		},
+		"number": {
+			"bsonType": "string",
+			"title": "编号",
+			"description": "驾校的编号"
+		},
+		"city": {
+			"bsonType": "string",
+			"title": "城市",
+			"description": "驾校的所在城市"
+		},
+		"year": {
+			"bsonType": "int",
+			"description": "年份"
+		},
+		"month": {
+			"bsonType": "int",
+			"title": "月份",
+			"description": "驾校几月份的信息"
+		},
+		"keer_sum": {
+			"bsonType": "int",
+			"title": "人数",
+			"description": "科二在学人数"
+		},
+		"kesan_sum": {
+			"bsonType": "int",
+			"title": "人数",
+			"description": "科三在学人数"
+		},
+		"keer_rate": {
+			"bsonType": "int",
+			"title": "及格率",
+			"description": "科二及格率"
+		},
+		"kesan_rate": {
+			"bsonType": "int",
+			"title": "及格率",
+			"description": "科三及格率"
+		}
+	}
+}

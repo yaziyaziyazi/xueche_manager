@@ -1,0 +1,44 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"title": "姓名",
+			"description": "用户姓名",
+			"trim": "both",
+			"foreignKey": "students.name"
+		},
+		"data": {
+			"bsonType": "object",
+			"description": "练车时间",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"month": {
+					"bsonType": "int",
+					"description": "几月"
+				},
+				"day": {
+					"bsonType": "int",
+					"description": "几号"
+				},
+				"time": {
+					"bsonType": "string",
+					"description": "三个时间段，上午，下午，晚上"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,344 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index"
+			
+        }, {
+            "path": "pages/login/login",
+            "style": {
+                "topWindow": false,
+                "leftWindow": false,
+                "navigationBarTitleText": "登录"
+            }
+        }, {
+            "path": "pages/error/404",
+            "style": {
+                "navigationBarTitleText": "Not Found"
+            }
+        }, {
+            "path": "pages/changepwd/changepwd",
+            "style": {
+                "navigationBarTitleText": "修改密码"
+            }
+
+        }, {
+            "path": "pages/car_appointment/car_appointment",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        },
+        {
+            "path": "pages/students/add",
+            "style": {
+                "navigationBarTitleText": "新增"
+            }
+        },
+        {
+            "path": "pages/students/edit",
+            "style": {
+                "navigationBarTitleText": "编辑"
+            }
+        },
+        {
+            "path": "pages/students/list",
+            "style": {
+                "navigationBarTitleText": "列表"
+            }
+        }
+        ,{
+            "path" : "pages/exam_manage/keyi_exam_arrange/keyi_exam_arrange",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/exam_manage/keer_kesan_pass/keer_kesan_pass",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/jiaxiao_manage/all_jiaxiao/all_jiaxiao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/jiaxiao_manage/all_coach/all_coach",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/exam_manage/keer_kesan_pass/add_exam",
+			"style": {
+			    "navigationBarTitleText": "新增学员考试",
+			    "navigationStyle": "default"
+			}
+            
+        }
+        ,{
+            "path" : "pages/students_manane/student_sum/student_sum",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/exam_manage/rate_sum/rate_sum",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/studying_manage/keer_kesan_studying/keer_kesan_studying",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/kesi_students/kesi_students",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/pause_exam/pause_exam",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/sign_up_coach_sum/sign_up_coach_sum",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/sign_up_coach_sum/add_students",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增学员",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/exam_manage/keyi_exam_arrange/add_keyi_exam",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增学员科一考试",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/sign_up_coach_sum/edit_student",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改学员信息",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/jiaxiao_manage/all_coach/add_coachs",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增教练",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/jiaxiao_manage/all_jiaxiao/add_jiaxiao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增驾校",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/kesi_students/add_kesi_students",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增科四学员",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/students_manane/pause_exam/add_pause",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增暂时不考学员",
+				"navigationStyle": "default",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/studying_manage/studied_examined/studied_examined",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+    "subPackages": [{
+        "root": "pages/system",
+        "pages": [{
+            "path": "menu/list",
+            "style": {
+                "navigationBarTitleText": "菜单管理"
+            }
+        }, {
+            "path": "menu/add",
+            "style": {
+                "navigationBarTitleText": "新增菜单",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "menu/edit",
+            "style": {
+                "navigationBarTitleText": "修改菜单",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "permission/list",
+            "style": {
+                "navigationBarTitleText": "权限管理"
+            }
+        }, {
+            "path": "permission/add",
+            "style": {
+                "navigationBarTitleText": "新增权限",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "permission/edit",
+            "style": {
+                "navigationBarTitleText": "修改权限",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "role/add",
+            "style": {
+                "navigationBarTitleText": "新增角色",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "role/edit",
+            "style": {
+                "navigationBarTitleText": "修改角色",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "role/list",
+            "style": {
+                "navigationBarTitleText": "角色管理"
+            }
+        }, {
+            "path": "user/add",
+            "style": {
+                "navigationBarTitleText": "新增用户",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "user/edit",
+            "style": {
+                "navigationBarTitleText": "修改用户",
+                "navigationStyle": "default"
+            }
+        }, {
+            "path": "user/list",
+            "style": {
+                "navigationBarTitleText": "用户管理"
+            }
+        }]
+    }, {
+        "root": "pages/demo",
+        "pages": [{
+            "path": "init/init",
+            "style": {
+                "topWindow": false,
+                "leftWindow": false,
+                "navigationBarTitleText": "创建超级管理员"
+            }
+        }, {
+            "path": "icons/icons",
+            "style": {
+                "navigationBarTitleText": "图标"
+            }
+        }, {
+            "path": "table/table",
+            "style": {
+                "navigationBarTitleText": "表格"
+            }
+        }]
+    }],
+    "globalStyle": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "管理系统",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "topWindow": {
+        "path": "windows/topWindow",
+        "style": {
+            "height": "60px"
+        },
+        "matchMedia": {
+            "minWidth": 0
+        }
+		
+    },
+    "leftWindow": {
+        "path": "windows/leftWindow",
+        "style": {
+            "width": "240px"
+        }
+    }
+	
+}

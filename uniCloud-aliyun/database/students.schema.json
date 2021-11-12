@@ -1,0 +1,189 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"title": "姓名",
+			"description": "用户姓名",
+			"trim": "both"
+		},
+		"card": {
+			"bsonType": "string",
+			"title": "身份证",
+			"description": "学生的身份证"
+		},
+		"coach": {
+			"bsonType": "string",
+			"title": "教练",
+			"description": "学生的教练",
+			"foreignKey": "coachs.name"
+		},
+		"mobile": {
+			"bsonType": "string",
+			"title": "手机号码",
+			"description": "手机号码",
+			"pattern": "^\\+?[0-9-]{3,20}$",
+			"trim": "both"
+		},
+		"company": {
+			"bsonType": "string",
+			"title": "驾校",
+			"description": "学生的所属驾校",
+			"foreignKey": "companies.name"
+		},
+		"data": {
+			"bsonType": "object",
+			"description": "练车时间",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"month": {
+					"bsonType": "int",
+					"description": "几月"
+				},
+				"day": {
+					"bsonType": "int",
+					"description": "几号"
+				},
+				"time": {
+					"bsonType": "string",
+					"description": "三个时间段，上午，下午，晚上"
+				}
+			}
+		},
+		"first": {
+			"bsonType": "object",
+			"description": "科目一",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"exam": {
+					"bsonType": "string",
+					"description": "科目一考试时间"
+				},
+				"enable": {
+					"bsonType": "int",
+					"description": "科目一是否通过,(0代表失败，1代表成功)"
+				},
+				"pause": {
+					"bsonType": "int",
+					"description": "暂时不考科目一,(0代表取消，1代表真的)"
+				}
+			}
+		},
+		"second": {
+			"bsonType": "object",
+			"description": "科目二",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"exam": {
+					"bsonType": "string",
+					"description": "科目二考试时间"
+				},
+				"enable": {
+					"bsonType": "int",
+					"description": "科目二是否通过,(0代表失败，1代表成功)"
+				},
+				"studied": {
+					"bsonType": "int",
+					"description": "科目二学习次数，也就是约车次数"
+				},
+				"examined": {
+					"bsonType": "int",
+					"description": "科目二考试次数"
+				},
+				"pause": {
+					"bsonType": "int",
+					"description": "暂时不考科目二,(0代表取消，1代表真的)"
+				}
+			}
+		},
+		"third": {
+			"bsonType": "object",
+			"description": "科目三",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"exam": {
+					"bsonType": "string",
+					"description": "科目三考试时间"
+				},
+				"enable": {
+					"bsonType": "int",
+					"description": "科目三是否通过,(0代表失败，1代表成功)"
+				},
+				"studied": {
+					"bsonType": "int",
+					"description": "科目三学习次数，也就是约车次数"
+				},
+				"examined": {
+					"bsonType": "int",
+					"description": "科目三考试次数"
+				},
+				"pause": {
+					"bsonType": "int",
+					"description": "暂时不考科目三,(0代表取消，1代表真的)"
+				}
+			}
+		},
+		"fourth": {
+			"bsonType": "object",
+			"description": "科目四",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "年份"
+				},
+				"exam": {
+					"bsonType": "string",
+					"description": "科目四考试时间"
+				},
+				"enable": {
+					"bsonType": "int",
+					"description": "科目四是否通过,(0代表失败，1代表成功)"
+				},
+				"pause": {
+					"bsonType": "int",
+					"description": "暂时不考科目四,(0代表取消，1代表真的)"
+				}
+			}
+		},
+		"application_time": {
+			"bsonType": "object",
+			"description": "报名时间",
+			"properties": {
+				"year": {
+					"bsonType": "int",
+					"description": "报名年份"
+				},
+				"month": {
+					"bsonType": "int",
+					"description": "报名月份)"
+				},
+				"day": {
+					"bsonType": "int",
+					"description": "报名日期)"
+				}
+			}
+		}
+	}
+}

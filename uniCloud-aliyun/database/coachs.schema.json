@@ -1,0 +1,84 @@
+{
+	"bsonType": "object",
+	"required": ["name"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"title": "姓名",
+			"description": "教练的姓名"
+		},
+		"student": {
+			"bsonType": "string",
+			"title": "学生",
+			"description": "教练的学生",
+			"foreignKey": "students._id"
+		},
+		"company": {
+			"bsonType": "string",
+			"title": "驾校",
+			"description": "教练的所属驾校",
+			"foreignKey": "companies.name"
+		},
+		"phone": {
+			"bsonType": "string",
+			"title": "手机号码",
+			"description": "手机号码",
+			"pattern": "^\\+?[0-9-]{3,20}$",
+			"trim": "both"
+		},
+		"number": {
+			"bsonType": "string",
+			"title": "编号",
+			"description": "教练的编号"
+		},
+		"month": {
+			"bsonType": "int",
+			"title": "月份",
+			"description": "教练几月份的信息"
+		},
+		"keyi_exam_sum": {
+			"bsonType": "int",
+			"title": "考试人数",
+			"description": "科一考试人数"
+		},
+		"keer_sum": {
+			"bsonType": "int",
+			"title": "人数",
+			"description": "科二在学人数"
+		},
+		"keer_exam_sum": {
+			"bsonType": "int",
+			"title": "考试人数",
+			"description": "科二考试人数"
+		},
+		"kesan_sum": {
+			"bsonType": "int",
+			"title": "人数",
+			"description": "科三在学人数"
+		},
+		"keer_rate": {
+			"bsonType": "int",
+			"title": "及格率",
+			"description": "科二及格率"
+		},
+		"kesan_exam_sum": {
+			"bsonType": "int",
+			"title": "考试人数",
+			"description": "科三考试人数"
+		},
+		"students_sum": {
+			"bsonType": "int",
+			"title": "报名人数",
+			"description": "教练的学员人数"
+		}
+	}
+}
